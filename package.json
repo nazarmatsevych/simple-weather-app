@@ -1,5 +1,6 @@
 {
-  "name": "https://nazarmatsevych.github.io/simple-weather-app/",
+  "name": "weather_app",
+  "homepage": "https://nazarmatsevych.github.io/simple-weather-app/",
   "version": "0.0.0",
   "private": true,
   "scripts": {
