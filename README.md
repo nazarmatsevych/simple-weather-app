@@ -1,6 +1,16 @@
 # weather_app
 
-This template should help get you started developing with Vue 3 in Vite.
+### [DEMO LINK](https://nazarmatsevych.github.io/simple-weather-app/)
+
+### This is a weather app built using Vue 3, Google Autocomplete, and Chart.js. It allows users to search for a location using Google Autocomplete and then displays the current weather information for that location, as well as a chart showing the forecast for current day.
+
+## Technologies
+
+* Vue 3 composition API
+* Google autocomplete API
+* Chart.js
+* Openweathermap API
+
 
 ## Recommended IDE Setup
 
