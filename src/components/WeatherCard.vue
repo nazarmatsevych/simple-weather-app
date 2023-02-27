@@ -16,7 +16,7 @@ const props = defineProps({
 
 const isModalVisible = ref(false);
 const favoritesList = ref(JSON.parse(localStorage.getItem('favCities')) || []);
-const isFavorite = ref(favoritesList.value.includes(props.cityName))
+const isFavorite = ref(false);
 
 
 const addToFavorites = () => {
@@ -27,6 +27,10 @@ const addToFavorites = () => {
   
   if (favoritesList.value.length === 5) {
     isModalVisible.value = true;
+  }
+  
+  if (favoritesList.value.includes(props.cityName)) {
+    isFavorite.value = true;
   }
 }
 
