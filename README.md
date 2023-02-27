@@ -7,9 +7,11 @@
 ## Technologies
 
 * Vue 3 composition API
+* Vue Router
 * Google autocomplete API
 * Chart.js
 * Openweathermap API
+* ipapi
 
 
 ## Recommended IDE Setup
