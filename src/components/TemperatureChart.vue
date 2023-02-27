@@ -57,7 +57,7 @@ const drawChart = async () => {
       datasets: [
         {
           label: 'Temperature',
-          data: hourlyWeatherData.map((data) => data.temp),
+          data: hourlyWeatherData.map((data) => Math.round(data.temp)),
           fill: false,
           borderColor: 'rgb(75, 192, 192)',
           tension: 0.1,
@@ -103,12 +103,19 @@ onMounted(() => {
 
 <style>
 .chart {
-  width: 600px;
+  max-width: 600px;
+  min-width: 340px;
   height: 300px;
   margin: 24px auto 0;
   border-radius: 12px;
   background-color: #F9F9F8;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+@media (max-width: 440px) {
+  .chart {
+    height: 200px;
+  }
 }
 
 .error-message {

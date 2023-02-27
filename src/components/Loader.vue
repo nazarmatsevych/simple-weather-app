@@ -10,7 +10,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 150px;
   
   &__content {
     border-radius: 50%;
